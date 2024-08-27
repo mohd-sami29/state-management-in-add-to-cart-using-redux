@@ -18,7 +18,6 @@ function Cart() {
           Total Amount : $
           {carts &&
             carts.reduce((total, cart) => {
-              console.log("T", total);
               return (total = total + cart.price);
             }, 0)}
         </div>
